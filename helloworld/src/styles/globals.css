@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-image{
+    background-image: url(../../public/assets/images/bg-mobile-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

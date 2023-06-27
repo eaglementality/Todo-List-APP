@@ -1,0 +1,42 @@
+
+{
+   "tasks" : [
+         {
+            "id":1,
+            "task": "Complete online javascript course",
+            "isActive":false,
+            "lineThrough": false
+         },
+         {
+            "id":2,
+            "task": "Jog around the park 3x",
+            "isActive":false,
+            "lineThrough": false
+         },
+         {
+            "id":3,
+            "task": "10 minutes meditation",
+            "isActive":false,
+            "lineThrough": false         
+         },
+         {
+            "id":4,
+            "task": "Read for 1 hour",
+            "isActive":false,
+            "lineThrough": false     
+         },
+         {
+            "id":5,
+            "task": "Pick up groceries",
+            "isActive":false,
+            "lineThrough": false        
+         },
+         {
+            "id":6,
+            "task": "Complete Todo App on Frontend Mentor",
+            "isActive":false,
+            "lineThrough": false       
+         }
+         
+   ]
+}
