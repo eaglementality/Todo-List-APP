@@ -8,7 +8,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'text-todo': '2.rem',
 
+      },
+      
+      
+    },
+    screens: {
+      'mobile': '375px',
+      'desktop': '1440px',
     },
   },
   plugins: [],

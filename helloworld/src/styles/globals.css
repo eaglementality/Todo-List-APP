@@ -4,7 +4,7 @@
 
 
 .bg-image{
-    background-image: url(../../public/assets/images/bg-mobile-light.jpg);
+    background: url('/assets/images/bg-mobile-light.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

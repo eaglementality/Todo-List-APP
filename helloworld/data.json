@@ -22,7 +22,7 @@
          {
             "id":4,
             "task": "Read for 1 hour",
-            "isActive":false,
+            "isActive":true,
             "lineThrough": false     
          },
          {
