@@ -1,8 +1,8 @@
 export const reducer = (state, action) => {
-  
+
   // This is our state that we are passing througn the whole app{todo,visibilityFilter}
   const { todos, visibilityFilter, uid } = state;
-  
+
   switch (action.type) {
     case 'INITIALIZE_TODO':
       return {
@@ -26,15 +26,15 @@ export const reducer = (state, action) => {
         uid,
       };
     }
-    case 'DELETE_TODO': { 
+    case 'DELETE_TODO': {
       return {
         todos: action.payload,
         visibilityFilter,
         uid,
       };
     }
-    
-    case 'CLEAR_COMPLETED': { 
+
+    case 'CLEAR_COMPLETED': {
       return {
         todos: action.payload,
         visibilityFilter,
@@ -56,15 +56,17 @@ export const reducer = (state, action) => {
         todos: todos,
         visibilityFilter: action.payload,
       };
-    
+
     case 'SET_TODOS':
       return {
         todos: action.payload.todos,
         visibilityFilter,
         uid,
       };
-    
+
     default:
       return state;
   }
 };
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B// Backend
+
