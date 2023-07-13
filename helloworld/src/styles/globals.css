@@ -3,8 +3,27 @@
 @tailwind utilities;
 
 
-.bg-image{
+@layer base{
+    body{
+       @apply dark: bg-zinc-100 bg-Verydark;
+    }
+}
+
+
+
+.bg-image_light{
     background: url('/assets/images/bg-mobile-light.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.bg-image_dark{
+    background: url('/assets/images/bg-mobile-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* body{
+    --tw-bg-opacity: 1;
+    background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+} */
