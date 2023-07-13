@@ -2,7 +2,6 @@ import React, {useState, useEffect } from "react";
 import { TaskCard } from "@/components/task-card";
 import { appProps } from "@/utils/context";
 import { Droppable, DragDropContext , } from "react-beautiful-dnd";
-import {useTheme} from 'next-themes';
 
 export function getFilteredTodos (todos, visibilityFilter){
     switch (visibilityFilter) {
@@ -71,21 +70,21 @@ export default function TodoApp(){
        }
     }
 
-    // const toggleLightAndDark = ()=>{
-    //     switch (Icon_light_and_dark) {
+    const toggleLightAndDark = ()=>{
+        switch (Icon_light_and_dark) {
             
-    //         case false:
-    //             setIcon_light_and_dark(true);
-    //             setDarktheme(true);
-    //             break;
-    //         case true:
-    //             setIcon_light_and_dark(false);
-    //             setDarktheme(false);
-    //             break;
+            case false:
+                setIcon_light_and_dark(true);
+                setDarktheme(true);
+                break;
+            case true:
+                setIcon_light_and_dark(false);
+                setDarktheme(false);
+                break;
           
-    //     }
+        }
         
-    // }
+    }
    
     
     const add_Task = ()=>{
@@ -114,14 +113,7 @@ export default function TodoApp(){
         <div id="first" className={`w-full h-75 ${Darktheme ? 'bg-image_light' : 'bg-image_dark'} px-6`}>
             <div  className="flex items-center justify-between pb-36 pt-12 ">
                 <span className="text-todo font-bold text-3xl text-white tracking-space cursor-default">TODO</span>
-                <span className="cursor-pointer" onClick={() => { 
-                    if(theme == "dark" ){ 
-                        setTheme('light')
-                        setDarktheme(true)
-                        } 
-                    else{ 
-                        setTheme("dark")
-                        }}}>
+                <span className="cursor-pointer" onClick={toggleLightAndDark}>
                     {Icon_light_and_dark ? icon_moon : icon_sun}
                 </span>
             </div>
