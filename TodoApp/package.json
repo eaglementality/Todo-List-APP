@@ -1,5 +1,5 @@
 {
-  "name": "churchfinance",
+  "name": "todoList",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,11 +13,11 @@
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "next": "13.2.3",
-    "next-themes": "^0.1.5",
     "react": "18.2.0",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
